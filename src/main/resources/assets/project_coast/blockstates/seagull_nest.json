@@ -1,0 +1,9 @@
+{
+    "variants": {
+        "egg=0": { "model": "project_coast:block/seagull_nest" },
+        "egg=1": { "model": "project_coast:block/seagull_nest_uno" },
+        "egg=2": { "model": "project_coast:block/seagull_nest_dose" },
+        "egg=3": { "model": "project_coast:block/seagull_nest_tres" },
+        "egg=4": { "model": "project_coast:block/seagull_nest_four" }
+    }
+}
