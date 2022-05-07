@@ -14,6 +14,6 @@ public class PCBlocks {
     public static final BlockSubRegistryHelper HELPER = ProjectCoast.REGISTRY_HELPER.getBlockSubHelper();
     public static final RegistryObject<Block> SEAGULL_NEST = HELPER.createBlock("seagull_nest", () -> new NestBlock(BlockProperties.SEAGULL_NEST), CreativeModeTab.TAB_MISC);
 
-    public static final RegistryObject<Block> SEAGRASS_BLOCK = HELPER.createBlock("seagrass_block", () -> new NestBlock(BlockProperties.SEAGRASS_BLOCK), CreativeModeTab.TAB_MISC);
+    public static final RegistryObject<Block> SEAGRASS_BLOCK = HELPER.createBlock("seagrass_block", () -> new Block(BlockProperties.SEAGRASS_BLOCK), CreativeModeTab.TAB_MISC);
 
 }

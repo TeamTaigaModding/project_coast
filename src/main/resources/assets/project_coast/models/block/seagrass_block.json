@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "top": "project_coast:block/seagrass_block",
+    "bottom": "minecraft:block/sand",
+    "side": "project_coast:block/seagrass_block_side"
+  }
+}

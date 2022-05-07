@@ -5,107 +5,38 @@
       "rolls": 1,
       "entries": [
         {
-          "type": "minecraft:item",
-          "functions": [
+          "type": "minecraft:alternatives",
+          "children": [
             {
-              "function": "minecraft:set_count",
+              "type": "minecraft:item",
               "conditions": [
                 {
-                  "condition": "minecraft:block_state_property",
-                  "block": "project_coast:seagull_nest",
-                  "properties": {
-                    "eggs": "1"
+                  "condition": "minecraft:match_tool",
+                  "predicate": {
+                    "item": "minecraft:shears"
                   }
                 }
               ],
-              "count": 1
+              "name": "project_coast:seagull_nest"
             },
             {
-              "function": "minecraft:set_count",
-              "conditions": [
+              "type": "minecraft:item",
+              "functions": [
                 {
-                  "condition": "minecraft:block_state_property",
-                  "block": "project_coast:seagull_nest",
-                  "properties": {
-                    "eggs": "2"
+                  "function": "minecraft:set_count",
+                  "count": {
+                    "min": 1.0,
+                    "max": 3.0,
+                    "type": "minecraft:uniform"
                   }
+                },
+                {
+                  "function": "minecraft:explosion_decay"
                 }
               ],
-              "count": 2
-            },
-            {
-              "function": "minecraft:set_count",
-              "conditions": [
-                {
-                  "condition": "minecraft:block_state_property",
-                  "block": "project_coast:seagull_nest",
-                  "properties": {
-                    "eggs": "3"
-                  }
-                }
-              ],
-              "count": 3
-            },
-            {
-              "function": "minecraft:set_count",
-              "conditions": [
-                {
-                  "condition": "minecraft:block_state_property",
-                  "block": "project_coast:seagull_nest",
-                  "properties": {
-                    "eggs": "4"
-                  }
-                }
-              ],
-              "count": 4
-            },
-            {
-              "function": "minecraft:explosion_decay"
+              "name": "minecraft:stick"
             }
-          ],
-          "name": "project_coast:seagull_egg"
-        }
-      ]
-    },
-    {
-      "type": "minecraft:alternatives",
-      "children": [
-        {
-          "type": "minecraft:item",
-          "conditions": [
-            {
-              "condition": "minecraft:match_tool",
-              "predicate": {
-                "enchantments": [
-                  {
-                    "enchantment": "minecraft:silk_touch",
-                    "levels": {
-                      "min": 1
-                    }
-                  }
-                ]
-              }
-            }
-          ],
-          "name": "project_coast:seagull_nest"
-        },
-        {
-          "type": "minecraft:item",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "type": "minecraft:uniform",
-                "min": 2.0,
-                "max": 3.0
-              },
-              "add": false
-            },
-            {
-              "function": "minecraft:explosion_decay"
-            }
-          ],
-          "name": "minecraft:stick"
+          ]
         }
       ]
     }

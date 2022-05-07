@@ -12,5 +12,5 @@ import net.minecraftforge.registries.RegistryObject;
 public class PCItems {
     public static final ItemSubRegistryHelper HELPER = ProjectCoast.REGISTRY_HELPER.getItemSubHelper();
 
-    public static final RegistryObject<Item> SEAGULL_EGG = HELPER.createItem("seagull_egg", () -> new Item(new Item.Properties().stacksTo(16).tab(CreativeModeTab.TAB_MISC)));
+    public static final RegistryObject<Item> SEAGULL_EGG = HELPER.createItem("seagull_egg", () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
 }
